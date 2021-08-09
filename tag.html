@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--* html meta tags-->
+    <meta name="keyword" content="html,canvas,meta" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--* open graph meta tags-->
+    <meta property="og:url" content="tag.html" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Learn about meta tags and html canvas!"
+    />
+    <meta
+      property="og:description"
+      content="Learn about meta tags and html canvas!"
+    />
+    <meta property="og:image" content="tag.html" />
+    <!--* twitter  meta tags-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@" />
+    <meta
+      name="twitter:title"
+      content="Learn about meta tags and html canvas!"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn about meta tags and html canvas!."
+    />
+    <meta name="twitter:image" content="tag.html" />
+    <title>Learn about meta tags and html canvas!</title>
+  </head>
+
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      canvas {
+        border: 1px solid tomato;
+        margin: auto;
+        display: block;
+        width: 50%;
+      }
+     
+    </style>
+    <h1>Meta Tags &amp; Html Canvas &amp;SVG</h1>
+    <canvas id="myCanvas"></canvas>
+<svg width="400" height="180">
+    <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+        style="fill:rgb(71, 13, 13);stroke:rgb(255, 174, 174);stroke-width:5;opacity:0.5" />
+    Sorry, your browser does not support.
+</svg>
+<svg width="400" height="100">
+    <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+</svg>
+
+
+
+    <script>
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+
+      ctx.fillRect(10, 10, 20, 20);
+      ctx.fillRect(20, 20, 30, 30);
+      ctx.fillRect(30, 30, 40, 40);
+
+      ctx.strokeStyle = "red";
+      ctx.lineWidth = 4;
+      ctx.strokeRect(50, 50, 50, 50);
+      ctx.strokeStyle = "blue";
+      ctx.lineWidth = 6;
+      ctx.strokeRect(60, 60, 60, 60);
+    </script>
+  </body>
+</html>
